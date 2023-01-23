@@ -35,7 +35,13 @@ const App = () => {
     
   return (
     <div id="main">
-               {/* Do not remove the main div */}
+
+      <ol>
+{cityList.map((city , ind)=>{
+  if(city.country === "India")
+  return <li key={city.city + ind}>{city.city}</li>
+})}
+      </ol>
     </div>
   )
 }
